@@ -1,0 +1,5 @@
+This folder contains a file "validador.c" that is used to verify the correctness of the counters.
+
+The folder 'polybench' cointains the bytecode for all programs of Polyhedral Benchmark Suite (PolyBnehc/C) 
+that were used to verify if the pass collects only the user-defined functions, and if dosen't broke during 
+execution.

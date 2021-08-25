@@ -1,0 +1,7 @@
+CoyoteBench.almabench:
+  program: 557
+  function:
+    anpm: 13
+    main: 153
+    planetpv: 357
+    radecdist: 34

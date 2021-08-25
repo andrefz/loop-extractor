@@ -1,0 +1,11 @@
+CoyoteBench.lpbench:
+  program: 481
+  function:
+    daxpy: 75
+    dgefa: 65
+    dgesl: 52
+    dscal: 41
+    idamax: 76
+    main: 74
+    matgen: 77
+    random_double: 21

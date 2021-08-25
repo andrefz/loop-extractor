@@ -1,0 +1,16 @@
+Stack dump:
+0.	Program arguments: /usr/bin/opt -disable-output -load-pass-plugin=/home/anderson/IOSProject/IntelligentOptimizationSelection/Plugins/Clang-LLVM/lib/libMilepostStaticFeatures.so -O1 -passes=feature-extractor smg2000.rbc 
+ #0 0x00007f056497356f llvm::sys::PrintStackTrace(llvm::raw_ostream&) (/lib/x86_64-linux-gnu/libLLVM-9.so.1+0xa4256f)
+ #1 0x00007f0564971980 llvm::sys::RunSignalHandlers() (/lib/x86_64-linux-gnu/libLLVM-9.so.1+0xa40980)
+ #2 0x00007f0564973971 (/lib/x86_64-linux-gnu/libLLVM-9.so.1+0xa42971)
+ #3 0x00007f0568145540 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x15540)
+ #4 0x00007f05655ceb9a llvm::isCriticalEdge(llvm::Instruction const*, unsigned int, bool) (/lib/x86_64-linux-gnu/libLLVM-9.so.1+0x169db9a)
+ #5 0x00007f05638dae55 feature_extractor::FeatureExtractor::FeatureExtractor(llvm::Module&) (/home/anderson/IOSProject/IntelligentOptimizationSelection/Plugins/Clang-LLVM/lib/libMilepostStaticFeatures.so+0x11e55)
+ #6 0x00007f0563903450 (anonymous namespace)::visitor(llvm::Module&) (/home/anderson/IOSProject/IntelligentOptimizationSelection/Plugins/Clang-LLVM/lib/libMilepostStaticFeatures.so+0x3a450)
+ #7 0x00007f05639033f2 (anonymous namespace)::FeatureExtractorPass::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/home/anderson/IOSProject/IntelligentOptimizationSelection/Plugins/Clang-LLVM/lib/libMilepostStaticFeatures.so+0x3a3f2)
+ #8 0x00007f0563903385 llvm::detail::PassModel<llvm::Module, (anonymous namespace)::FeatureExtractorPass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Module> >::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/home/anderson/IOSProject/IntelligentOptimizationSelection/Plugins/Clang-LLVM/lib/libMilepostStaticFeatures.so+0x3a385)
+ #9 0x00007f0564a99a02 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module> >::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/lib/x86_64-linux-gnu/libLLVM-9.so.1+0xb68a02)
+#10 0x00000000004b1ff1 llvm::runPassPipeline(llvm::StringRef, llvm::Module&, llvm::TargetMachine*, llvm::ToolOutputFile*, llvm::ToolOutputFile*, llvm::ToolOutputFile*, llvm::StringRef, llvm::opt_tool::OutputKind, llvm::opt_tool::VerifierKind, bool, bool, bool, bool, bool) (/usr/bin/opt+0x4b1ff1)
+#11 0x00000000004bf075 main (/usr/bin/opt+0x4bf075)
+#12 0x00007f0563a101e3 __libc_start_main /build/glibc-4WA41p/glibc-2.30/csu/../csu/libc-start.c:342:3
+#13 0x00000000004aa86e _start (/usr/bin/opt+0x4aa86e)

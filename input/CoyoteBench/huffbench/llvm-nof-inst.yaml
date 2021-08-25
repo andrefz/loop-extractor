@@ -1,0 +1,8 @@
+CoyoteBench.huffbench:
+  program: 602
+  function:
+    compdecomp: 460
+    generate_test_data: 22
+    heap_adjust: 55
+    main: 45
+    random4: 20
